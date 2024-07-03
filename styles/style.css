@@ -1,0 +1,93 @@
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+body {
+
+    font-family: Montserrat;
+    background: black;
+}
+
+
+/*NAVBAR*/
+
+.precice {
+
+    color: white;
+    background: black;
+}
+
+.precice a {
+
+    color: white;
+}
+
+.precice a:hover {
+
+    color: white;
+}
+
+.logo i {
+
+    color:  white;
+    padding: 15px;
+    margin-right: 0px;
+}
+
+/*CAROUSEL*/
+.carouselss {
+
+    background: black;
+}
+
+.carouselss img {
+
+    width: 100%;
+    height: 700px;
+}
+
+/* KRAJ NAVBARA I CAROUSEL*/
+
+.informacije {
+
+    color: white;
+    background: black;
+    text-align: center;
+    
+}
+.naslov {
+
+    margin-top: 30px;
+}
+.btn {
+
+    border-radius: 20px;
+    background: white;
+    color: black;
+    margin-top: 20px;
+}
+
+/* DEO O PLATFORMAMA*/
+
+
+.platforme {
+    margin-top: 200px;
+    color: white;
+}
+
+.platforme img {
+
+    width: 190px;
+    height: 220px;
+   
+}
+
+.upoznaj {
+
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+}
