@@ -127,5 +127,3 @@ dist
 .pnp.*
 
 # Ne zelimo da uploadujemo slike
-imgs/
-/imgs/
