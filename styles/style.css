@@ -556,8 +556,9 @@ a:hover, a:focus {
 }
 
 .platforme img {
-    width: 190px;
-    height: 220px;
+
+    width: 120px;
+    padding: 15px;
 }
 
 .upoznaj {
