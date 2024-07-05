@@ -228,8 +228,309 @@ a:hover, a:focus {
 .nas-navbar-dark .navbar-toggler:focus {
     outline: none !important; 
 }
-
-/* CAROUSEL */
+/*CAROUSEL*/
+.carousel
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.carousel .list .item
+{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.carousel .list .item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .list .item .sadrzajNaSlici
+{
+    position: absolute;
+    top: 20px;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 0 5px 10px black;
+}
+.carousel .list .item .sadrzajNaSlici .author
+{
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.carousel .list .item .sadrzajNaSlici .topic, .carousel .list .item .sadrzajNaSlici .title
+{
+    font-weight: bold;
+    line-height: 1.3em;
+    font-size: 5em;
+}
+.carousel .list .item .sadrzajNaSlici .topic
+{
+    color:#f1bc31;
+}
+.carousel .list .item .sadrzajNaSlici .dugmadNaSlideru
+{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.carousel .list .item .sadrzajNaSlici button
+{
+    border: none;
+    background-color: white;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.carousel .list .item .sadrzajNaSlici button:nth-child(2)
+{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+/*thumbnail css*/
+.thumbnail
+{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+}
+.thumbnail .item
+{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+.thumbnail .item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thumbnail .item .sadrzaj
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+.thumbnail .item .sadrzaj .title
+{
+    font-weight: bold;
+}
+/*strelice*/
+.strelice
+{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.strelice button
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    border: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 1;
+}
+.strelice button:hover
+{
+    background-color: white;
+    color: gray;
+}
+/*aktivni item i animacija*/
+.carousel .list .item:nth-child(1)
+{
+    z-index: 1;
+}
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:nth-child(1) .title,
+.carousel .list .item:nth-child(1) .topic,
+.carousel .list .item:nth-child(1) .opis,
+.carousel .list .item:nth-child(1) .dugmadNaSlideru
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: pokaziSadrzaj 0.5s 1s linear 1 forwards;
+}
+@keyframes pokaziSadrzaj
+{
+    to 
+    {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.carousel .list .item:nth-child(1) .title
+{
+    animation-delay: 1.2s;
+}
+.carousel .list .item:nth-child(1) .topic
+{
+    animation-delay: 1.4s;
+}
+.carousel .list .item:nth-child(1) .opis
+{
+    animation-delay: 1.6s;
+}
+.carousel .list .item:nth-child(1) .dugmadNaSlideru
+{
+    animation-delay: 1.8s;
+}
+.carousel.sled .list .item:nth-child(1) img
+{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: pokaziSliku 0.5s linear 1 forwards;
+}
+@keyframes pokaziSliku
+{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+.carousel.sled .thumbnail .item:nth-last-child(1)
+{
+    width: 0;
+    overflow: hidden;
+    animation: pokaziThumbnail .5s linear 1 forwards;
+}
+@keyframes pokaziThumbnail
+{
+    to{
+        width: 150px;
+    }
+}
+.carousel.sled .thumbnail
+{
+    transform: translateX(150px);
+    animation: transformisiThumbnail .5s linear 1 forwards;
+}
+@keyframes transformisiThumbnail
+{
+    to{
+        transform: translateX(0);
+    }
+}
+.carousel.pret .list .item:nth-child(2)
+{
+    z-index: 2;
+}
+.carousel.pret .list .item:nth-child(2) img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: izvanSlika 0.5s linear 1 forwards;
+}
+@keyframes izvanSlika
+{
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+.carousel.pret .thumbnail .item:nth-child(1)
+{
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: pokaziThumbnail 0.5s linear 1 forwards;
+}
+.carousel.pret .thumbnail .item:nth-child(2) .author,
+.carousel.pret .thumbnail .item:nth-child(2) .title,
+.carousel.pret .thumbnail .item:nth-child(2) .topic,
+.carousel.pret .thumbnail .item:nth-child(2) .opis,
+.carousel.pret .thumbnail .item:nth-child(2) .author,
+.carousel.pret .thumbnail .item:nth-child(2) .dugmadNaSlideru
+{
+    animation: contentVan 1.5s linear 1 forwards;
+}
+@keyframes contentVan
+{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+.carousel.sled .strelice button,
+.carousel.pret .strelice button
+{
+    pointer-events: none;
+}
+/*vreme*/
+.vreme
+{
+    width: 0%;
+    height: 5px;
+    background-color: #f1bc31;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.carousel.sled .vreme, .carousel.pret .vreme
+{
+    width: 100%;
+    animation: protekloVreme 2s linear 1 forwards;
+}
+@keyframes protekloVreme
+{
+    to{
+        width: 0;
+    }
+}
+@media screen and (max-width: 678px)
+{
+    .carousel .list .item .sadrzajNaSlici
+    {
+        padding-right: 0;
+    }
+    .carousel .list .item .sadrzajNaSlici .title
+    {
+        font-size: 30px;
+    }
+}
+/* CAROUSEL 
 .carouselss {
     background: black;
 }
@@ -238,7 +539,7 @@ a:hover, a:focus {
     width: 100%;
     height: 700px;
 }
-
+*/
 /* INFORMACIJE */
 .informacije {
     color: white;
