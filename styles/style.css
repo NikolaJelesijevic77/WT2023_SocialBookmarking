@@ -530,16 +530,7 @@ a:hover, a:focus {
         font-size: 30px;
     }
 }
-/* CAROUSEL 
-.carouselss {
-    background: black;
-}
 
-.carouselss img {
-    width: 100%;
-    height: 700px;
-}
-*/
 /* INFORMACIJE */
 .informacije {
     color: white;
@@ -574,3 +565,163 @@ a:hover, a:focus {
     width: 200px;
     margin-top: 20px;
 }
+.upoznajmo
+{
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0077b5, 0 0 20px #0077b5, 0 0 25px #0077b5, 0 0 30px #0077b5, 0 0 35px #0077b5;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0077b5, 0 0 20px #0077b5, 0 0 25px #0077b5, 0 0 30px #0077b5, 0 0 35px #0077b5;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0077b5, 0 0 40px #0077b5, 0 0 50px #0077b5, 0 0 60px #0077b5, 0 0 70px #0077b5;
+    }
+}
+
+/*Kartice deo*/
+.card-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the card section */
+    padding: 20px 0; /* Add vertical padding for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns */
+    gap: 20px;
+    justify-content: center; /* Center the grid items */
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px; /* Increase height for better appearance */
+    width: 100%; /* Ensure card takes full width of grid item */
+    max-width: 350px; /* Ensure card width is optimal */
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 16px;
+    color: black;
+    margin: 10px 0;
+}
+
+.detail-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f1bc31;
+    text-decoration: none;
+    border: 1px solid #f1bc31;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.detail-btn:hover {
+    background-color: #f1bc31;
+    color: white;
+    box-shadow: 0 0 10px #f1bc31;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; 
+    }
+}
+/*Logo Slajder*/
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logo-slide {
+    animation-play-state: paused;
+  }
+  
+  .logo-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logo-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+
+

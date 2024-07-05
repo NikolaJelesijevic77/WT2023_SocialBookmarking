@@ -53,3 +53,17 @@ function pokaziSadrzaj(type) {
     clearTimeout(runAutoRun);
     autoRun(); // Restart the auto run whenever the user manually changes the slide
 }
+/*Kartice animacija */
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'translateY(-10px)';
+        });
+
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'translateY(0)';
+        });
+    });
+});
