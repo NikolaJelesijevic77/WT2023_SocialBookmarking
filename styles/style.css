@@ -19,6 +19,7 @@ a {
 a:hover, a:focus {
     outline: none !important;
     box-shadow: none; 
+    color: #f1bc31;
 }
 .social-media {
     display: inline-block; 
@@ -279,23 +280,25 @@ a:hover, a:focus {
 {
     display: grid;
     grid-template-columns: repeat(2, 130px);
-    grid-template-rows: 40px;
+    grid-template-rows: 50px;
     gap: 5px;
     margin-top: 20px;
 }
 .carousel .list .item .sadrzajNaSlici button
 {
+    border-radius: 10px;
     border: none;
     background-color: white;
     letter-spacing: 3px;
-    font-weight: 500;
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .carousel .list .item .sadrzajNaSlici button:nth-child(2)
 {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    background-color: #f1bc31;
+    color: black;
+    border: 1px solid #f1bc31;
 }
 /*thumbnail css*/
 .thumbnail
@@ -331,6 +334,11 @@ a:hover, a:focus {
 .thumbnail .item .sadrzaj .title
 {
     font-weight: bold;
+    color: gold;
+}
+.thumbnail .item .sadrzaj .opis
+{
+    color: gold;
 }
 /*strelice*/
 .strelice
@@ -740,7 +748,7 @@ a:hover, a:focus {
   
 .logo-slide img 
 {
-    height: 50px;
+    height: 150px;
     margin: 0 40px;
 }
 /*Footer*/
