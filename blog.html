@@ -33,7 +33,7 @@
     </button>
     <div class="collapse navbar-collapse" id="nas-nav">
       <ul class="navbar-nav m-auto">
-        <li class="nav-item active"><a href="#" class="nav-link">Početna</a></li>
+        <li class="nav-item active"><a href="index.html" class="nav-link">Početna</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primeri</a>
           <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -47,14 +47,24 @@
         </li>
         <li class="nav-item"><a href="#" class="nav-link">Šta je SB?</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Čemu služi SB?</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
         <li class="nav-item"><a href="#" class="nav-link">O nama</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<div class="container py-3">
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="completed">
+        <label class="custom-control-label" for="completed">Only completed</label>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row" id="blogCards">
+    </div>
+</div>
 
 <section class="footer">
     <div class="mreze">
@@ -69,6 +79,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/blog.js"></script>
+
 
 </body>
 </html>

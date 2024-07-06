@@ -1,0 +1,26 @@
+{"blogovi" : [
+    {
+        "id":1,
+        "naslov":"Blog 1",
+        "sadrzaj":"Sadrzaj bloga 1",
+        "datum":"2020-01-01",
+        "autor":"Autor 1",
+        "slug": "blog-1"
+    },
+    {
+        "id":2,
+        "naslov":"Blog 2",
+        "sadrzaj":"Sadrzaj bloga 2",
+        "datum":"2020-01-02",
+        "autor":"Autor 2",
+        "slug": "blog-2"
+    },
+    {
+        "id":3,
+        "naslov":"Blog 3",
+        "sadrzaj":"Sadrzaj bloga 3",
+        "datum":"2020-01-03",
+        "autor":"Autor 3",
+        "slug": "blog-3"
+    }
+]}
