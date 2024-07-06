@@ -685,6 +685,15 @@ a:hover, a:focus {
     .card-container {
         grid-template-columns: repeat(2, 1fr); 
     }
+    .platforme img {
+
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        width: 100px;
+        padding: 20px;
+ 
+     }
 }
 
 @media (max-width: 768px) {
@@ -792,4 +801,25 @@ a:hover, a:focus {
 .footer .credit span
 {
     color: #f1bc31;
+}
+
+ul li {
+    padding: 2px;
+    color: white;
+}
+/*Kako funkcionisu i najpoznatije*/
+.upustvo h1 
+{
+    margin-left: 14px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.upustvo
+{
+    margin-left: 6%;
+}
+
+.mreze h1 {
+    font-size: xx-large;
 }
