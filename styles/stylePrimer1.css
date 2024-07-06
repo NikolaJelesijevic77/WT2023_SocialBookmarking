@@ -311,6 +311,49 @@ a:hover, a:focus {
     font-size: larger;
 }
 
+/*Futer*/
+.footer
+{
+    border-top: 2px solid white;
+    background:black;
+    text-align: center;
+}
+
+.footer .mreze
+{
+    padding:1rem 0;
+}
+
+.footer .mreze a
+{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    color:white;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin:.3rem;
+}
+
+.footer .mreze a:hover
+{
+    background-color: #f1bc31;
+}
+
+.footer .credit
+{
+    font-size: 20px;
+    color:#fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+.footer .credit span
+{
+    color: #f1bc31;
+}
+
 
 /*MEDIA*/
 
