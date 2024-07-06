@@ -544,10 +544,24 @@ a:hover, a:focus {
 }
 
 .btn {
-    border-radius: 20px;
+    border-radius: 30px;
     background: white;
-    color: black;
     margin-top: 20px;
+    width: 300px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f1bc31;
+    text-decoration: none;
+    border: 1px solid #f1bc31;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-weight: bold;
+}
+.btn:hover
+{
+    background-color: #f1bc31;
+    color: white;
+    box-shadow: 0 0 10px #f1bc31;
 }
 
 /* PLATFORME */
@@ -558,15 +572,10 @@ a:hover, a:focus {
 
 .platforme img {
 
-    width: 120px;
+    width: 105px;
     padding: 15px;
 }
 
-.upoznaj {
-    height: 50px;
-    width: 200px;
-    margin-top: 20px;
-}
 .upoznajmo
 {   
     margin-top: 60px;
