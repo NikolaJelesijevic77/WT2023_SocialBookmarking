@@ -246,11 +246,18 @@ a:hover, a:focus {
 .uvod img {
 
 
-    width: 170px;
+    width: 500px;
 }
 
 
 /*opis*/
+
+.opisPinterest {
+
+margin-top: 100px;
+
+}
+
 
 .naslov h1 {
 
@@ -264,6 +271,14 @@ a:hover, a:focus {
 .funkcije {
 
     margin-top: 100px;
+}
+
+.funkcije img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .funkcije h1 {
@@ -313,7 +328,13 @@ a:hover, a:focus {
 
 /*PosledjiDeo*/
 
-.Insta ul {
+.Pin {
+
+    margin-top: 100px;
+}
+
+
+.Pin ul {
 
     margin-top: 0;
 }
@@ -377,6 +398,11 @@ a:hover, a:focus {
     .uvod {
 
         text-align: center;
+    }
+
+    .funkcije img{
+
+        width: 400px;
     }
     
 }
