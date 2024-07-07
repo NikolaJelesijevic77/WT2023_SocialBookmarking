@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: white;
+    background-color: black;
 }
 
 /* NAVBAR */
@@ -19,6 +19,7 @@ a {
 a:hover, a:focus {
     outline: none !important;
     box-shadow: none; 
+    color: #f1bc31;
 }
 .social-media {
     display: inline-block; 
@@ -229,7 +230,7 @@ a:hover, a:focus {
     outline: none !important; 
 }
 
-/*Futer*/
+/*Footer*/
 .footer
 {
     border-top: 2px solid white;
