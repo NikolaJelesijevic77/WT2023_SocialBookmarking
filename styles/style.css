@@ -13,13 +13,13 @@ body {
 /* NAVBAR */
 a {
     transition: .3s all ease;
-    color: #f1bc31; 
+    color: black; 
     text-decoration: none;
 }
 a:hover, a:focus {
     outline: none !important;
     box-shadow: none; 
-    color: #f1bc31;
+    color: black;
 }
 .social-media {
     display: inline-block; 
