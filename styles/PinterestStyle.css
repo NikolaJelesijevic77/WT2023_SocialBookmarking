@@ -236,11 +236,10 @@ a:hover, a:focus {
     margin-top: 80px;
 
 }
-.uvod .naslov {
 
+.naslov {
 
-    font-size: xx-large;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .uvod img {
