@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+/* NAVBAR */
+a {
+    transition: .3s all ease;
+    color: black; 
+    text-decoration: none;
+}
+a:hover, a:focus {
+    outline: none !important;
+    box-shadow: none; 
+    color: black;
+}
+.social-media {
+    display: inline-block; 
+}
+.social-media p a {
+    width: 34px;
+    height: 34px;
+    background: black;
+    margin-right: 1px; 
+}
+.social-media p a span {
+    color: white; 
+}
+.social-media p a:hover {
+    background: #f1bc31;
+    border-color: #f1bc31; 
+}
+.social-media p a:hover span {
+    color: white; 
+}
+
+.nas-navbar-dark {
+    background: white !important;
+    z-index: 3;
+    padding: 0;
+    box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34); 
+}
+
+@media (max-width: 991.98px) {
+    .nas-navbar-dark {
+        background: white;
+        position: relative;
+        top: 0;
+        padding: 10px 15px; 
+    } 
+}
+
+@media (max-width: 991.98px) {
+    .nas-navbar-dark .navbar-nav {
+        padding-bottom: 10px; 
+    } 
+}
+
+@media (max-width: 991.98px) {
+    .nas-navbar-dark .navbar-nav > .nav-item > .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: .9rem;
+        padding-bottom: .9rem; 
+    }
+    .nas-navbar-dark .navbar-nav > .nav-item > .nav-link:hover {
+        color: white; 
+    } 
+}
+
+/* Fix for mobile view dropdown menu */
+@media (max-width: 991.98px) {
+    .nas-navbar-dark .navbar-nav > .nav-item .dropdown-menu {
+        display: none;
+        background: white;
+        box-shadow: none;
+    }
+    .nas-navbar-dark .navbar-nav .dropdown.show .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .nas-navbar-dark .navbar-nav > .nav-item.cta > a {
+        color: white;
+        background: #f1bc31;
+        border-radius: 4px; 
+    } 
+}
+
+@media (max-width: 991.98px) {
+    .nas-navbar-dark .navbar-nav > .nav-item.active > a {
+        color: black;
+        background: #f1bc31; 
+    }
+    .nas-navbar-dark .navbar-nav > .nav-item.active > a:before {
+        display: none; 
+    } 
+}
+
+.nas-navbar-dark .navbar-brand {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.nas-navbar-dark .navbar-brand span {
+    display: block;
+    font-size: 16px;
+    font-weight: 500; 
+}
+
+.nas-navbar-dark .navbar-brand:hover, .nas-navbar-dark .navbar-brand:focus {
+    color: black; 
+}
+
+.nas-navbar-dark .navbar-brand:hover {
+    color: #f1bc31;
+}
+
+@media (max-width: 767.98px) {
+    .nas-navbar-dark .navbar-brand {
+        margin-bottom: 20px; 
+    } 
+}
+
+@media (max-width: 767.98px) {
+    .nas-navbar-dark .navbar-nav > .nav-item > .nav-link {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+    } 
+}
+
+@media (max-width: 767.98px) {
+    .nas-navbar-dark .navbar-nav > .nav-item.cta > a {
+        padding-left: 15px;
+        padding-right: 15px; 
+    } 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item > .nav-link {
+    font-size: 11px;
+    padding: 2rem 20px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    opacity: 1 !important; 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item > .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #f1bc31;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out 0s;
+    z-index: -1; 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item > .nav-link:hover {
+    color: black; 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item > .nav-link:hover:before {
+    visibility: visible;
+    background-color: #f1bc31;
+    transform: scaleX(1); 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item .dropdown-menu {
+    border: none;
+    background: white;
+    box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
+}
+
+.nas-navbar-dark .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item .dropdown-menu .dropdown-item {
+    font-size: 12px;
+    color: black; 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item .dropdown-menu .dropdown-item:hover, .nas-navbar-dark .navbar-nav > .nav-item .dropdown-menu .dropdown-item:focus {
+    background: #f1bc31;
+    color: white; 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item.cta > a {
+    color: white;
+    background: #f1bc31;
+    border-radius: 0px; 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item.active > a {
+    color: black; 
+}
+
+.nas-navbar-dark .navbar-nav > .nav-item.active > a:before {
+    visibility: visible;
+    background-color: #f1bc31;
+    transform: scaleX(1); 
+}
+
+.nas-navbar-dark .navbar-toggler {
+    border: none;
+    color: rgba(0, 0, 0, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .1em; 
+}
+
+.nas-navbar-dark .navbar-toggler:focus {
+    outline: none !important; 
+}
+/*CAROUSEL*/
+.carousel
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.carousel .list .item
+{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.carousel .list .item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .list .item .sadrzajNaSlici
+{
+    position: absolute;
+    top: 20px;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 0 5px 10px black;
+}
+.carousel .list .item .sadrzajNaSlici .author
+{
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.carousel .list .item .sadrzajNaSlici .topic, .carousel .list .item .sadrzajNaSlici .title
+{
+    font-weight: bold;
+    line-height: 1.3em;
+    font-size: 5em;
+}
+.carousel .list .item .sadrzajNaSlici .topic
+{
+    color:#f1bc31;
+}
+.carousel .list .item .sadrzajNaSlici .dugmadNaSlideru
+{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 50px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.carousel .list .item .sadrzajNaSlici button
+{
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.carousel .list .item .sadrzajNaSlici button:nth-child(2)
+{
+    background-color: #f1bc31;
+    color: black;
+    border: 1px solid #f1bc31;
+}
+/*thumbnail css*/
+.thumbnail
+{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+}
+.thumbnail .item
+{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+.thumbnail .item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thumbnail .item .sadrzaj
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+.thumbnail .item .sadrzaj .title
+{
+    font-weight: bold;
+    color: gold;
+}
+.thumbnail .item .sadrzaj .opis
+{
+    color: gold;
+}
+/*strelice*/
+.strelice
+{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.strelice button
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    border: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 1;
+}
+.strelice button:hover
+{
+    background-color: white;
+    color: gray;
+}
+/*aktivni item i animacija*/
+.carousel .list .item:nth-child(1)
+{
+    z-index: 1;
+}
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:nth-child(1) .title,
+.carousel .list .item:nth-child(1) .topic,
+.carousel .list .item:nth-child(1) .opis,
+.carousel .list .item:nth-child(1) .dugmadNaSlideru
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: pokaziSadrzaj 0.5s 1s linear 1 forwards;
+}
+@keyframes pokaziSadrzaj
+{
+    to 
+    {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.carousel .list .item:nth-child(1) .title
+{
+    animation-delay: 1.2s;
+}
+.carousel .list .item:nth-child(1) .topic
+{
+    animation-delay: 1.4s;
+}
+.carousel .list .item:nth-child(1) .opis
+{
+    animation-delay: 1.6s;
+}
+.carousel .list .item:nth-child(1) .dugmadNaSlideru
+{
+    animation-delay: 1.8s;
+}
+.carousel.sled .list .item:nth-child(1) img
+{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: pokaziSliku 0.5s linear 1 forwards;
+}
+@keyframes pokaziSliku
+{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+.carousel.sled .thumbnail .item:nth-last-child(1)
+{
+    width: 0;
+    overflow: hidden;
+    animation: pokaziThumbnail .5s linear 1 forwards;
+}
+@keyframes pokaziThumbnail
+{
+    to{
+        width: 150px;
+    }
+}
+.carousel.sled .thumbnail
+{
+    transform: translateX(150px);
+    animation: transformisiThumbnail .5s linear 1 forwards;
+}
+@keyframes transformisiThumbnail
+{
+    to{
+        transform: translateX(0);
+    }
+}
+.carousel.pret .list .item:nth-child(2)
+{
+    z-index: 2;
+}
+.carousel.pret .list .item:nth-child(2) img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: izvanSlika 0.5s linear 1 forwards;
+}
+@keyframes izvanSlika
+{
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+.carousel.pret .thumbnail .item:nth-child(1)
+{
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: pokaziThumbnail 0.5s linear 1 forwards;
+}
+.carousel.pret .thumbnail .item:nth-child(2) .author,
+.carousel.pret .thumbnail .item:nth-child(2) .title,
+.carousel.pret .thumbnail .item:nth-child(2) .topic,
+.carousel.pret .thumbnail .item:nth-child(2) .opis,
+.carousel.pret .thumbnail .item:nth-child(2) .author,
+.carousel.pret .thumbnail .item:nth-child(2) .dugmadNaSlideru
+{
+    animation: contentVan 1.5s linear 1 forwards;
+}
+@keyframes contentVan
+{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+.carousel.sled .strelice button,
+.carousel.pret .strelice button
+{
+    pointer-events: none;
+}
+/*vreme*/
+.vreme
+{
+    width: 0%;
+    height: 5px;
+    background-color: #f1bc31;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.carousel.sled .vreme, .carousel.pret .vreme
+{
+    width: 100%;
+    animation: protekloVreme 2s linear 1 forwards;
+}
+@keyframes protekloVreme
+{
+    to{
+        width: 0;
+    }
+}
+@media screen and (max-width: 678px)
+{
+    .carousel .list .item .sadrzajNaSlici
+    {
+        padding-right: 0;
+    }
+    .carousel .list .item .sadrzajNaSlici .title
+    {
+        font-size: 30px;
+    }
+}
+
+/* INFORMACIJE */
+.informacije {
+    color: white;
+    background: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.naslov {
+    margin-top: 30px;
+}
+
+.btn {
+    border-radius: 30px;
+    background: white;
+    margin-top: 20px;
+    width: 300px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f1bc31;
+    text-decoration: none;
+    border: 1px solid #f1bc31;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-weight: bold;
+}
+.btn:hover
+{
+    background-color: #f1bc31;
+    color: white;
+    box-shadow: 0 0 10px #f1bc31;
+}
+
+/* PLATFORME */
+.platforme {
+    margin-top: 100px;
+    color: white;
+}
+
+.platforme img {
+
+    width: 105px;
+    padding: 15px;
+}
+
+.upoznajmo
+{   
+    margin-top: 60px;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f1bc31, 0 0 20px #f1bc31, 0 0 25px #f1bc31, 0 0 30px #f3b61c, 0 0 35px #f3b61c;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f1bc31, 0 0 20px #f1bc31, 0 0 25px #f1bc31, 0 0 30px #f3b61c, 0 0 35px #f3b61c;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f1bc31, 0 0 40px #f1bc31, 0 0 50px #f1bc31, 0 0 60px #f3b61c, 0 0 70px #f3b61c;
+    }
+}
+
+/*Kartice deo*/
+.card-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the card section */
+    padding: 20px 0; /* Add vertical padding for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns */
+    gap: 20px;
+    justify-content: center; /* Center the grid items */
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px; /* Increase height for better appearance */
+    width: 100%; /* Ensure card takes full width of grid item */
+    max-width: 350px; /* Ensure card width is optimal */
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 16px;
+    color: black;
+    margin: 10px 0;
+}
+
+.detail-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f1bc31;
+    text-decoration: none;
+    border: 1px solid #f1bc31;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.detail-btn:hover {
+    background-color: #f1bc31;
+    color: white;
+    box-shadow: 0 0 10px #f1bc31;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .platforme img {
+
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        width: 100px;
+        padding: 20px;
+ 
+     }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; 
+    }
+}
+/*Logo Slajder*/
+@keyframes slide 
+{
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+  
+.logos 
+{
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+  
+.logos:before,
+.logos:after
+{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+  
+.logos:before 
+{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+  
+.logos:after 
+{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+  
+.logos:hover .logo-slide 
+{
+    animation-play-state: paused;
+}
+  
+.logo-slide 
+{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+  
+.logo-slide img 
+{
+    height: 150px;
+    margin: 0 40px;
+}
+/*Footer*/
+.footer
+{
+    border-top: 2px solid white;
+    background:black;
+    text-align: center;
+}
+
+.footer .mreze
+{
+    padding:1rem 0;
+}
+
+.footer .mreze a
+{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    color:white;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin:.3rem;
+}
+
+.footer .mreze a:hover
+{
+    background-color: #f1bc31;
+}
+
+.footer .credit
+{
+    font-size: 20px;
+    color:#fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+.footer .credit span
+{
+    color: #f1bc31;
+}
+
+.dnoLista li {
+    padding: 2px;
+    color: white;
+}
+/*Kako funkcionisu i najpoznatije*/
+.upustvo h1 
+{
+    margin-left: 14px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.upustvo
+{
+    margin-left: 6%;
+}
+
+.mreze h1 {
+    font-size: xx-large;
+}

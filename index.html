@@ -3,10 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/54f0727687.js" crossorigin="anonymous"></script>
     <title>Social Bookmarking</title>
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
 </head>
 <body>
-    <script src="js/script.js"></script>
+<nav class="navbar navbar-expand-lg nas-navbar-dark sticky-top" id="nas-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Social <span>Bookmarking</span></a>
+    <form action="#" class="order-sm-start order-lg-last">
+      <div class="form-group d-flex">
+        <div class="col d-flex justify-content-end">
+          <div class="social-media">
+            <p class="mb-0 d-flex">
+              <a href="#kartice" class="d-flex align-items-center justify-content-center"><span class="fa fa-pinterest"><i class="sr-only">Pinterest</i></span></a>
+              <a href="#kartice" class="d-flex align-items-center justify-content-center"><span class="fa fa-reddit"><i class="sr-only">Reddit</i></span></a>
+              <a href="#kartice" class="d-flex align-items-center justify-content-center"><span class="fa fa-stumbleupon"><i class="sr-only">Mix</i></span></a>
+              <a href="#kartice" class="d-flex align-items-center justify-content-center"><span class="fa fa-get-pocket"><i class="sr-only">Pocket</i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nas-nav" aria-controls="nas-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span> Meni
+    </button>
+    <div class="collapse navbar-collapse" id="nas-nav">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active"><a href="index.html" class="nav-link">Početna</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primeri</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown04">
+            <a class="dropdown-item" href="Pinterest.html">PINTEREST</a>
+            <a class="dropdown-item" href="Reddit.html">REDDIT</a>
+            <a class="dropdown-item" href="pocket.html">POCKET</a>
+            <a class="dropdown-item" href="stumbleupon.html">STUMBLE UPON</a>
+            <a class="dropdown-item" href="Diggo.html">DIIGO</a>
+            <a class="dropdown-item" href="flipboard.html">FLIPBOARD</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="stajesb.html" class="nav-link">Šta je SB?</a></li>
+        <li class="nav-item"><a href="cemu.html" class="nav-link">Čemu služi SB?</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">O nama</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="carousel">
+  <!--list itemi-->
+  <div class="list">
+    <div class="item">
+        <img src="imgs/pinterest header.png" alt="pinterest">
+        <div class="sadrzajNaSlici">
+          <div class="author">Social bookmarking</div>
+          <div class="title">Platforma</div>
+          <div class="topic">PINTEREST</div>
+          <div class="opis">
+            The best part of Pinterest is discovering new things and ideas from people around the world. So our moto is <b>"See it, make it, try it, do it!"</b>
+          </div>
+          <div class="dugmadNaSlideru">
+            <button><a href="#kartice">Kartice!</a></button>
+            <button><a href="Pinterest.html">Saznajte više!</a></button>
+          </div>
+        </div>
+    </div>
+    <div class="item">
+      <img src="imgs/reddit-header.jpg" alt="slika2">
+      <div class="sadrzajNaSlici">
+        <div class="author">Social bookmarking</div>
+        <div class="title">Platforma</div>
+        <div class="topic">REDDIT</div>
+        <div class="opis">
+          A vast network of communities where users can dive into their interests, hobbies, and passions, connecting with like-minded people through discussions, upvotes, and downvotes.
+          <b>Slogan: </b>"The Front Page of the Internet."
+        </div>
+        <div class="dugmadNaSlideru">
+          <button><a href="#kartice">Kartice!</a></button>
+          <button><a href="Reddit.html">Saznajte više!</a></button>
+        </div>
+      </div>
+  </div>
+  <div class="item">
+    <img src="imgs/WELCOME-TO-POCKET.jpg" alt="slika3">
+    <div class="sadrzajNaSlici">
+      <div class="author">Social bookmarking</div>
+      <div class="title">Platforma</div>
+      <div class="topic">POCKET</div>
+      <div class="opis">
+        Pocket: A versatile app that lets you save articles, videos, and web pages to view later, helping you keep track of interesting content from across the web, even offline.
+        <b>Slogan: </b>"When you find something you want to view later, put it in Pocket."
+      </div>
+      <div class="dugmadNaSlideru">
+        <button><a href="#kartice">Kartice!</a></button>
+        <button><a href="pocket.html">Saznajte više!</a></button>
+      </div>
+    </div>
+</div>
+<div class="item">
+  <img src="imgs/stumbleUpon.png" alt="slika4">
+  <div class="sadrzajNaSlici">
+    <div class="author">Social bookmarking</div>
+    <div class="title">Platforma</div>
+    <div class="topic">STUMBLE UPON (MIX)</div>
+    <div class="opis">
+      An innovative content discovery platform that allowed users to find and explore unique and interesting web pages based on their interests through a simple, randomized browsing experience.
+      <b>Slogan: </b>"Explore the Best of the Web."
+    </div>
+    <div class="dugmadNaSlideru">
+      <button><a href="#kartice">Kartice!</a></button>
+      <button><a href="stumbleupon.html">Saznajte više!</a></button>
+    </div>
+  </div>
+</div>
+  </div>
+  <!--Thumbnail slike-->
+  <div class="thumbnail">
+    <div class="item">
+      <img src="imgs/pinterest header.png">
+      <div class="sadrzaj">
+        <div class="title">
+          Pinterest
+        </div>
+        <div class="opis">
+          Social bookmarking mreža
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="imgs/reddit-header.jpg">
+      <div class="sadrzaj">
+        <div class="title">
+          Reddit
+        </div>
+        <div class="opis">
+          Social bookmarking mreža
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="imgs/WELCOME-TO-POCKET.jpg">
+      <div class="sadrzaj">
+        <div class="title">
+          Pocket
+        </div>
+        <div class="opis">
+          Social bookmarking mreža
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="imgs/stumbleUpon.png">
+      <div class="sadrzaj">
+        <div class="title">
+          StumbleUpon - MIX
+        </div>
+        <div class="opis">
+          Social bookmarking mreža
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--strelice-->
+  <div class="strelice">
+    <button id="pret"><</button>
+    <button id="sled">></button>
+  </div>
+  <div class="vreme"></div>
+</div>
+
+<div class="informacije">
+  <h1 class="naslov">ŠTA JE SOCIAL BOOKMARKING</h1>
+  <br>
+  <p>Social bookmarking je online praksa gde korisnici označavaju, čuvaju i dele web stranice radi lakšeg pristupa i deljenja sa drugima.
+    <br>
+    Ova tehnika omogućava korisnicima organizaciju i pristup svojim omiljenim resursima putem internet preglednika.
+  </p>
+  <button class="btn btn-lg"><a href="stajesb.html">Više o tome!</a></button>
+</div>
+
+<div class="platforme align-items-center">
+  <div class="container my-5">
+    <div class="row py-4">
+      <div class="col-lg-4 mb-4 my-lg-auto mx-auto">
+
+        <h1 class="font-weight-bold mb-3">PLATFORME</h1>
+        <p>Omogućavaju otkrivanje novog sadržaja i pružaju SEO prednosti, ali mogu imati i nedostatke poput spamovanja. Efikasnost zavisi od zajednice korisnika i kvaliteta deljenih resursa.</p>
+        <div class="text-center ">
+      </div>
+      </div>
+      <div class="col-lg-2 "><img src="/imgs/tviter logo.png" alt="twitterlogo" ></div>
+      <div class="col-lg-2 "><img src="/imgs/fb logo.png" alt="facebooklogo" ></div>
+      <div class="col-lg-2 "><img src="/imgs/insta logo.png" alt="instagramlogo" ></div>
+    </div>
+    </div>
+</div>
+<!--Kartice-->
+<div class="naslovni container text-center">
+  <h1 class="upoznajmo">UPOZNAJMO SE SA PLATFORMAMA!</h1>
+</div>
+
+<div class="card-section">
+  <div class="card-container" id="kartice">
+    <div class="card">
+        <img src="imgs/Pinterest-logo.png" alt="Pinterest-logo">
+        <h3>PINTEREST</h3>
+        <p>Platforma za vizuelno otkrivanje koja korisnicima omogućava da čuvaju i dele slike i ideje na razne teme.</p>
+        <a href="Pinterest.html" class="detail-btn">Saznajte više!</a>
+    </div>
+    <div class="card">
+        <img src="imgs/reddit.png" alt="Reddit-logo">
+        <h3>REDDIT</h3>
+        <p>Zajednički vođena platforma gde korisnici mogu da podnose, glasaju i diskutuju o sadržaju na širokom spektru tema kroz subreddits.</p>
+        <a href="Reddit.html" class="detail-btn">Saznajte više!</a>
+    </div>
+    <div class="card">
+        <img src="imgs/Pocket_logo.png" alt="Pocket_logo">
+        <h3>POCKET</h3>
+        <p>Služba za čuvanje članaka, video zapisa i drugih web sadržaja za kasnije gledanje sa integracijom za razne pretraživače i aplikacije.</p>
+        <a href="pocket.html" class="detail-btn">Saznajte više!</a>
+    </div>
+    <div class="card">
+        <img src="imgs/StumbleUpon_logo.png" alt="StumbleUpon_logo">
+        <h3>STUMBLE UPON (MIX)</h3>
+        <p>Platforma za otkrivanje sadržaja koja prikazuje web sadržaj na osnovu korisničkih interesa i omogućava čuvanje i deljenje personalizovanih kolekcija.</p>
+        <a href="stumbleupon.html" class="detail-btn">Saznajte više!</a>
+    </div>
+    <div class="card">
+      <img src="imgs/diigo.png" alt="Diggo logo">
+      <h3>DIIGO</h3>
+      <p>Alat za istraživanje i socijalno obeležavanje koji omogućava korisnicima da čuvaju, organizuju i dele obeležene stranice sa funkcijama za isticanje i anotaciju.</p>
+      <a href="Diigo.html" class="detail-btn">Saznajte više!</a>
+  </div>
+  <div class="card">
+      <img src="imgs/flipboard.png" alt="Flipboard_logo">
+      <h3>FLIPBOARD</h3>
+      <p>Platforma za agregaciju sadržaja koja omogućava korisnicima da kreiraju prilagođene magazine prikupljanjem članaka, slika i video zapisa iz različitih izvora.</p>
+      <a href="flipboard.html" class="detail-btn">Saznajte više!</a>
+  </div>
+  </div>
+</div>
+<!--Cemu sluzi deo-->
+<div class="informacije">
+  <h1 class="naslov">ČEMU SLUŽI SOCIAL BOOKMARKING</h1>
+  <br>
+  <p>Social bookmarking je online praksa označavanja i čuvanja veb stranica radi lakšeg pristupa i deljenja sa drugima. <br> Korisnici mogu organizovati svoje označene resurse, dodavati tagove, deliti ih s drugima i pratiti aktivnosti drugih korisnika.
+    <br> Ovo olakšava otkrivanje i deljenje korisnih informacija, a takođe može doprineti i boljem rangiranju veb stranica na pretraživačima.</p>
+  <button class="btn btn-lg"><a href="cemu.html">Više o tome!</a></button>
+</div>
+<!--Slider s logoima-->
+<div class="logos">
+  <div class="logo-slide">
+    <img src="imgs/reddit-logo-new.svg" />
+    <img src="imgs/Pinterest-Symbole.png" />
+    <img src="imgs/stumbleupon.svg" />
+    <img src="imgs/facebook.svg" />
+    <img src="imgs/Pocket_App_Logo.png" />
+    <img src="imgs/Twitter_and_X_logos.svg.png" />
+    <img src="imgs/Flipboard_logo_with_wordmark.svg.png" />
+    <img src="imgs/Logo_Diigo.svg.png" />
+    <img src="imgs/Instagram_logo.svg.png" />
+    <img src="imgs/TikTok_logo.svg.png" />
+    <img src="imgs/YouTube_Logo_2017.svg.png" />
+  </div>
+</div>
+<script>
+  var copy = document.querySelector(".logo-slide").cloneNode(true);
+  document.querySelector(".logos").appendChild(copy);
+</script>
+<!--Kako funkcionise deo-->
+<div class="upustvo">
+  <div class="container my-5">
+    <div class="row py-4">
+      <div class="col-lg-4 mb-4 my-lg-auto mx-auto">
+
+        <h1 class="font-weight-bold mb-3">KAKO FUNKCIONIŠE</h1>
+       <ul class="dnoLista">
+        <li>Registracija i Profil</li>
+        <li>Bookmarking</li>
+        <li>Organizacija</li>
+        <li>Deljenje</li>
+        <li>Društvena Interakcija</li>
+        <li>Pretraživanje i Otkrivanje</li>
+        <li>SEO Beneficije</li>
+       </ul>
+      </div>
+      <div class="col-lg-4 mx-auto">
+        <h1 class="font-weight-bold mb-3 mreze">NAJPOZNATIJE MREŽE</h1>
+       <ul class="dnoLista">
+        <li>Reddit <span class="fa fa-reddit"></span></li>
+        <li>Pocket <span class="fa fa-get-pocket"></span></li>
+        <li>Flipboard <span class="fab fa-flipboard"></span></li>
+        <li>Pinterest <span class="fa fa-pinterest"></span></li>
+        <li>Delicious <span class="fa fa-delicious"></span></li>
+        <li>Mix <span class="fa fa-stumbleupon"></span></li>
+       </ul>
+        </div>
+    </div>
+    </div>
+</div>
+  <div class="informacije">
+    <button class="btn btn-lg"><a href="cemu.html">Više o tome!</a></button>
+  </div>
+
+<!--Footer-->
+<section class="footer">
+  <div class="mreze">
+      <a href="https://www.facebook.com" target=”_blank” class="fab fa-facebook-f"></a>
+      <a href="https://www.instagram.com" target=”_blank” class="fab fa-instagram"></a>
+      <a href="https://www.youtube.com" target=”_blank” class="fab fa-youtube"></a>
+      <a href="https://www.tiktok.com" target=”_blank” class="fab fa-tiktok"></a>
+  </div>
+  <div class="credit">Created by <span>WT 2023</span> | &copy all rights reserved</div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/0p5P6kaL5W5Z2TTDIBV5Tm4I9XFx1FzZp5Cmjr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
