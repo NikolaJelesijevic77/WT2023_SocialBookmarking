@@ -3,60 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Bookmarking</title>
-    <link rel="stylesheet" type="text/css" href="styles/PinterestStyle.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/54f0727687.js" crossorigin="anonymous"></script>
-
+    <title>Social Bookmarking</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylePrimer1.css">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg nas-navbar-dark sticky-top" id="nas-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Social <span>Bookmarking</span></a>
-          <form action="#" class="order-sm-start order-lg-last">
-            <div class="form-group d-flex">
-              <div class="col d-flex justify-content-end">
-                <div class="social-media">
-                  <p class="mb-0 d-flex">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-pinterest"><i class="sr-only">Pinterest</i></span></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-reddit"><i class="sr-only">Reddit</i></span></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-stumbleupon"><i class="sr-only">Mix</i></span></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-get-pocket"><i class="sr-only">Pocket</i></span></a>
-                  </p>
-                </div>
-              </div>
+  <nav class="navbar navbar-expand-lg nas-navbar-dark sticky-top" id="nas-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Social <span>Bookmarking</span></a>
+      <form action="#" class="order-sm-start order-lg-last">
+        <div class="form-group d-flex">
+          <div class="col d-flex justify-content-end">
+            <div class="social-media">
+              <p class="mb-0 d-flex">
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-pinterest"><i class="sr-only">Pinterest</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-reddit"><i class="sr-only">Reddit</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-stumbleupon"><i class="sr-only">Mix</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-get-pocket"><i class="sr-only">Pocket</i></span></a>
+              </p>
             </div>
-          </form>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nas-nav" aria-controls="nas-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span> Meni
-          </button>
-          <div class="collapse navbar-collapse" id="nas-nav">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item active"><a href="#" class="nav-link">Početna</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primeri</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="#">PINTEREST</a>
-                  <a class="dropdown-item" href="#">REDDIT</a>
-                  <a class="dropdown-item" href="#">POCKET</a>
-                  <a class="dropdown-item" href="#">STUMBLE UPON</a>
-                </div>
-              </li>
-              <li class="nav-item"><a href="#" class="nav-link">Šta je SB?</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Čemu služi SB?</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">O nama</a></li>
-            </ul>
           </div>
         </div>
-      </nav>
-      
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nas-nav" aria-controls="nas-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Meni
+      </button>
+      <div class="collapse navbar-collapse" id="nas-nav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active"><a href="#" class="nav-link">Početna</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primeri</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="#">PINTEREST</a>
+              <a class="dropdown-item" href="#">REDDIT</a>
+              <a class="dropdown-item" href="#">POCKET</a>
+              <a class="dropdown-item" href="#">STUMBLE UPON</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Šta je SB?</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Čemu služi SB?</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">O nama</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="uvodPinterest">
+    <div class="container my-5">
+      <div class="row py-4">
+        <div class="col-lg-4 mb-4 my-lg-auto mx-auto">
+
+          <h1 class="naslov">PINTEREST</h1>
+          <p>Pinterest je od strane svojih kreatora definisan kao “katalog ideja”. Iako ga svi tretiraju kao društvenu mrežu, mogućnosti za bližim povezivanjem sa drugim korisnicima su ograničene. Pinterest se može i definisati kao platforma gde “čuvate ideje za kasnije“. Zamislite ga kao neku oglasnu tablu, na koju kačite isečke iz magazine, da vam služe kao inspiracija. To je Pinterest, samo u digitalnom obliku.</p>
+          <div class="text-center">
+        </div>
+        </div>
+
+        <div class="col-lg-4 mx-auto"><img src="slike/insta logo.png" alt=""></a>
+      </div>
+      </div>
+    </div>
 
 
 
+<div class="opisIntagrama">
+    <div class="container ">
+        <div class="row ">
+          <div class="col-10 mb-4 my-lg-auto mx-auto naslov">
+                <h1>STA JE TO INSTAGRAM</h1>
+            </div>
+        </div>
+        <div class="col-10 mb-4 my-lg-auto mx-auto pasus">
+        <p>Instagram je društvena mreža osnovana 2010. godine. Aplikacija je prvobitno bila dostupna samo za iOS uređaje, ali je kasnije proširena na Android i web verzije. U 2012. godini, Facebook je kupio Instagram za približno milijardu dolara.</p>
+        <br>
+        <ul>
+            <li>
+                <p>Osnivanje i vlasništvo: Osnovan od strane Kevina Systroma i Mikea Kriegera.</p>
+            </li>
+            <li><p>Instagram je prvenstveno mobilna aplikacija dostupna za iOS i Android uređaje. </p>
+            </li>
+            <li>
+                <p>Omogućava deljenje fotografija i videozapisa i interakciju putem komentara, lajkova i direktnih poruka.</p>
+            </li>
+            <li>
+                <p>Instagram je postao jedna od najpopularnijih društvenih mreža u svetu, s milijardama korisnika u celom svetu.</p>
+            </li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+<div class="funkcije">
+    <div class="container my-5">
+      <div class="row py-4">
+        <div class="col-10  mb-4 my-lg-auto mx-auto ">
+
+          <h1>FUNKCIJE INSTAGRAMA</h1>
+          <p>Instagram je društvena mreža osnovana 2010. godine. Aplikacija je prvobitno bila dostupna samo za iOS uređaje, ali je kasnije proširena na Android i web verzije. U 2012. godini, Facebook je kupio Instagram za približno milijardu dolara.</p>
+          <ul class="posebnaLista">
+            <li>
+                <i class="fa-solid fa-thumbs-up ikona"><span class="tekst"> - Reagovanje na objave</span></i> 
+            </li>
+            <li>
+                <i class="fa-solid fa-user-plus ikona"><span class="tekst"> - Dodavanje korisnika</span></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-file-invoice ikona"><span class="tekst"> - Objavljivanje objava</span></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-tags ikona"><span class="tekst"> - Tagovanje korisnika</span></i>
+            </li>
+          </ul>
+          
+          <div class="text-center">
+        </div>
+        </div>
+      </div>
+    </div>
 
 
+    <div class="Statistika">
+        <div class="container ">
+            <div class="row ">
+              <div class="col-10 mb-4 my-lg-auto mx-auto naslov">
+                    <h1>STATISTIKA INSTAGRAMA</h1>
+                </div>
+            </div>
+            <div class="col-10 mb-4 my-lg-auto mx-auto">
+            <p>Instagram statistika je ključan alat za svakoga ko želi da razume kako njihovi sadržaji funkcionišu i kako privlače publiku na ovoj platformi. U nastavku slede informacij o nekim ključnim metrikama i alatima za analizu:</p>
+                <div class="karakteristike">
 
-    <script src="js/script.js"></script>
+                   <p>700 <strong class="bold">MILIONA</strong> aktivnih <br> korisnika</p>
+                   <p>95 <strong class="bold">MILIONA</strong> objava <br> dnevno</p>
+                   <p>40 <strong class="bold">MILIJARDI</strong> ukupnih <br> objava</p>
+                    
+                </div>
+        </div>
+        <div class="col-10 mb-4 my-lg-auto mx-auto">
+            <h1 class="naslov">Alati za analiziranje Instagram statistike</h1>
+            <br>
+            <ol>
+                <li>
+                    <p><strong>Instagram Insights:</strong></p>
+                    <p>Dostupan je svima sa poslovnim ili kreativnim profilom na Instagramu. Pruža osnovne statistike o vašem profilu, objavama i publici.</p>
+                </li>
+                <li>
+                  <strong>Hootsuite:</strong>
+                    <p> Ovaj alat omogućava agendiranje objava na Instagramu i pruža detaljne analize performansi kao što su engagement rate, reach, i druge ključne metrike.</p>
+                </li>
+                <li>
+                  <strong>Sprout Social:</strong>
+                    <p>Idealno rešenje za upravljanje društvenim mrežama koje nudi sveobuhvatne izveštaje i analize za Instagram i druge platforme.</p>
+                </li>
+            </ol>
+        </div>
+        </div>
+    </div>
+
+    <div class="Insta">
+      <div class="container ">
+          <div class="row ">
+            <div class="col-10 mb-4 my-lg-auto mx-auto naslov">
+                  <h1>Da li je Instagram social bookmarking?</h1>
+              </div>
+          </div>
+          <div class="col-10 mb-4 my-lg-auto mx-auto">
+          <p>Instagram se ne smatra tradicionalnim sajtom za društveno obeležavanje (social bookmarking). Iako ima neke karakteristike social bookmarking-a, njegova glavna funkcija je deljenje fotografija i video zapisa.</p> 
+          <h3>Sličnosti sa social bookmarking:</h3>
+          <ul>
+              <li>
+                  <p><strong>Čuvanje sadržaja:</strong>Korisnici mogu sačuvati postove za kasnije gledanje.</p>
+              </li>
+              <li><p><strong>Tagovanje:</strong> Hashtagovi omogućavaju organizaciju i pretragu sadržaja. </p>
+              </li>
+              <li>
+                  <p><strong>Deljenje:</strong>Postovi se mogu deliti putem poruka unutar aplikacije ili na drugim platformama.</p>
+              </li>
+          </ul>
+          <h3>Razlike u odnosu na tradicionalne sajtove za društveno obeležavanje:</h3>
+          <ul>
+              <li>
+                  <p><strong>Organizacija:</strong>Nedostaju opcije za organizaciju sačuvanih postova u mape ili kategorije.</p>
+              </li>
+              <li><p><strong>Linkovi:</strong> Instagram ne podržava direktno deljenje i organizovanje linkova ka različitim veb stranicama. </p>
+              </li>
+              <li>
+                  <p><strong>Šire pretraživanje:</strong> Pretraga je više usmerena na sadržaj unutar platforme nego na pretraživanje i organizaciju eksterne veb sadržine.</p>
+              </li>
+          </ul>
+          <p>Iako Instagram omogućava korisnicima da sačuvaju i organizuju određeni sadržaj, njegova funkcionalnost nije u potpunosti razvijena u pravcu društvenog obeležavanja kao što su Delicious ili Pinterest.</p>
+      </div>
+      </div>
+  </div>
+
+    <section class="footer">
+      <div class="mreze">
+          <a href="https://www.facebook.com/" target=”_blank” class="fab fa-facebook-f"></a>
+          <a href="https://www.instagram.com/" target=”_blank” class="fab fa-instagram"></a>
+          <a href="https://www.youtube.com/" target=”_blank” class="fab fa-youtube"></a>
+          <a href="https://www.tiktok.com/" target=”_blank” class="fab fa-tiktok"></a>
+      </div>
+      <div class="credit">Created by <span>WT 2023</span> | &copy all rights reserved</div>
+    </section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/0p5P6kaL5W5Z2TTDIBV5Tm4I9XFx1FzZp5Cmjr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
