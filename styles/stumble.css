@@ -273,7 +273,8 @@ a:hover, a:focus {
 
 .funkcije img {
 
-    width: 500px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     justify-content: center;
     display: flex;
@@ -395,6 +396,7 @@ a:hover, a:focus {
     .funkcije img {
 
         width: 100%;
+        height: 28%;
         margin: auto;
         display: flex;
         justify-content: center;
