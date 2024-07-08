@@ -271,6 +271,14 @@ a:hover, a:focus {
     margin-top: 100px;
 }
 
+.funkcije img {
+
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
 .funkcije h1 {
 
 
@@ -305,7 +313,6 @@ a:hover, a:focus {
    margin-top: 50px;
    margin-bottom: 50px;
     text-align: center;
-    display: flex;
     justify-content: space-between;
     margin-right: 20px;
 }
@@ -318,7 +325,7 @@ a:hover, a:focus {
 
 /*PosledjiDeo*/
 
-.Insta ul {
+.opis ul {
 
     margin-top: 0;
 }
@@ -374,6 +381,7 @@ a:hover, a:focus {
 
     .uvod img {
 
+        width: 100%;
         margin: auto;
         display: flex;
         justify-content: center;
@@ -382,6 +390,14 @@ a:hover, a:focus {
     .uvod {
 
         text-align: center;
+    }
+
+    .funkcije img {
+
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
     
 }
