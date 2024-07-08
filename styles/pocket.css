@@ -266,6 +266,14 @@ a:hover, a:focus {
     margin-top: 100px;
 }
 
+.funkcije img {
+
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
 .funkcije h1 {
 
 
@@ -377,6 +385,14 @@ a:hover, a:focus {
     .uvod {
 
         text-align: center;
+    }
+
+    .funkcije img {
+
+        justify-content: center;
+        display: flex;
+        margin: auto;
+       
     }
     
 }
