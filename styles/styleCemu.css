@@ -240,10 +240,11 @@ a:hover, a:focus {
 
 .uvod img {
 
-    width: 600px;
+    width: 100%;
     justify-content: center;
     display: flex;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .bold {
