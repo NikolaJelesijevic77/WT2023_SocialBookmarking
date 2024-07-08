@@ -327,3 +327,11 @@ a:hover, a:focus {
     background-color: #d4a123;
     color: #fff;
 }
+.custom-jumbotron {
+    background-color: #f1bc31;
+    color: white;
+    padding: 4rem 2rem; 
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
