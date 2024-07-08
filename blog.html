@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/54f0727687.js" crossorigin="anonymous"></script>
+    <title>Social Bookmarking</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styleBlog.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg nas-navbar-dark sticky-top" id="nas-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Social <span>Bookmarking</span></a>
+    <form action="#" class="order-sm-start order-lg-last">
+      <div class="form-group d-flex">
+        <div class="col d-flex justify-content-end">
+          <div class="social-media">
+            <p class="mb-0 d-flex">
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-pinterest"><i class="sr-only">Pinterest</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-reddit"><i class="sr-only">Reddit</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-stumbleupon"><i class="sr-only">Mix</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-get-pocket"><i class="sr-only">Pocket</i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nas-nav" aria-controls="nas-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span> Meni
+    </button>
+    <div class="collapse navbar-collapse" id="nas-nav">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active"><a href="index.html" class="nav-link">Početna</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primeri</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown04">
+            <a class="dropdown-item" href="Pinterest.html">PINTEREST</a>
+            <a class="dropdown-item" href="RedditPrimer.html">REDDIT</a>
+            <a class="dropdown-item" href="pocket.html">POCKET</a>
+            <a class="dropdown-item" href="stumbleupon.html">STUMBLE UPON</a>
+            <a class="dropdown-item" href="Diigo.html">DIIGO</a>
+            <a class="dropdown-item" href="flipboard.html">FLIPBOARD</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="stajesb.html" class="nav-link">Šta je SB?</a></li>
+        <li class="nav-item"><a href="cemu.html" class="nav-link">Čemu služi SB?</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">O nama</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="custom-jumbotron">
+    <h1 class="display-4">Dobro došli na blog sekciju našeg sajta!</h1>
+    <p class="lead">Ovaj deo predstavlja izgled blog kartica na našem sajtu. Kreirali smo ovaj deo kako bismo povukli neki sadržaj iz našeg JSON fajla i tako postavili kartice.</p>
+    <hr class="my-4">
+    <p><b>NAPOMENA:</b> Stranica je kreirana isključivo u svrhe zahteva, da povlačimo fajlove iz nekog fajla. Dugmad ne vode nigde!</p>
+  </div>
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3" id="blogCards">
+      
+    </div>
+</div>
+
+<section class="footer">
+    <div class="mreze">
+        <a href="https://www.facebook.com" target=”_blank” class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com" target=”_blank” class="fab fa-instagram"></a>
+        <a href="https://www.youtube.com" target=”_blank” class="fab fa-youtube"></a>
+        <a href="https://www.tiktok.com" target=”_blank” class="fab fa-tiktok"></a>
+    </div>
+    <div class="credit">Created by <span>WT 2023</span> | &copy all rights reserved</div>
+  </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/0p5P6kaL5W5Z2TTDIBV5Tm4I9XFx1FzZp5Cmjr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/blog.js"></script>
+
+
+</body>
+</html>
