@@ -1,26 +1,412 @@
-{"blogovi" : [
-    {
-        "id":1,
-        "naslov":"Blog 1",
-        "sadrzaj":"Sadrzaj bloga 1",
-        "datum":"2020-01-01",
-        "autor":"Autor 1",
-        "slug": "blog-1"
-    },
-    {
-        "id":2,
-        "naslov":"Blog 2",
-        "sadrzaj":"Sadrzaj bloga 2",
-        "datum":"2020-01-02",
-        "autor":"Autor 2",
-        "slug": "blog-2"
-    },
-    {
-        "id":3,
-        "naslov":"Blog 3",
-        "sadrzaj":"Sadrzaj bloga 3",
-        "datum":"2020-01-03",
-        "autor":"Autor 3",
-        "slug": "blog-3"
-    }
-]}
+{
+    "blogovi": [
+        {
+            "id": 1,
+            "naslov": "Introduction to Web Development",
+            "sadrzaj": "Learn the basics of web development including HTML, CSS, and JavaScript.",
+            "datum": "2020-01-01",
+            "autor": "Web Development Team",
+            "slug": "intro-to-web-development"
+        },
+        {
+            "id": 2,
+            "naslov": "Getting Started with Node.js",
+            "sadrzaj": "Beginner's guide to Node.js, a popular runtime environment for building server-side applications.",
+            "datum": "2020-01-02",
+            "autor": "Node.js Enthusiasts",
+            "slug": "getting-started-with-nodejs"
+        },
+        {
+            "id": 3,
+            "naslov": "Frontend Frameworks Comparison: React vs Vue vs Angular",
+            "sadrzaj": "Comparison of popular frontend frameworks: React, Vue, and Angular, highlighting their features and use cases.",
+            "datum": "2020-01-03",
+            "autor": "Frontend Framework Experts",
+            "slug": "frontend-frameworks-comparison"
+        },
+        {
+            "id": 4,
+            "naslov": "Introduction to Machine Learning",
+            "sadrzaj": "Discover the basics of machine learning and its applications in various industries.",
+            "datum": "2020-02-10",
+            "autor": "Machine Learning Team",
+            "slug": "intro-to-machine-learning"
+        },
+        {
+            "id": 5,
+            "naslov": "Cybersecurity Best Practices",
+            "sadrzaj": "Learn essential cybersecurity practices to protect your business from cyber threats.",
+            "datum": "2020-03-05",
+            "autor": "Security Experts",
+            "slug": "cybersecurity-best-practices"
+        },
+        {
+            "id": 6,
+            "naslov": "The Future of Artificial Intelligence",
+            "sadrzaj": "Explore the future trends and advancements in artificial intelligence technology.",
+            "datum": "2020-04-15",
+            "autor": "AI Researchers",
+            "slug": "future-of-ai"
+        },
+        {
+            "id": 7,
+            "naslov": "Tips for Effective Remote Team Management",
+            "sadrzaj": "Best practices for managing remote teams to ensure productivity and engagement.",
+            "datum": "2020-05-20",
+            "autor": "Remote Work Specialists",
+            "slug": "remote-team-management-tips"
+        },
+        {
+            "id": 8,
+            "naslov": "Digital Marketing Strategies",
+            "sadrzaj": "Explore effective digital marketing strategies to reach and engage your target audience.",
+            "datum": "2020-06-10",
+            "autor": "Digital Marketing Experts",
+            "slug": "digital-marketing-strategies"
+        },
+        {
+            "id": 9,
+            "naslov": "Blockchain Technology Explained",
+            "sadrzaj": "Understanding blockchain technology and its potential applications beyond cryptocurrency.",
+            "datum": "2020-07-01",
+            "autor": "Blockchain Innovators",
+            "slug": "blockchain-technology-explained"
+        },
+        {
+            "id": 10,
+            "naslov": "Innovations in Renewable Energy",
+            "sadrzaj": "Explore the latest innovations and trends in renewable energy technologies.",
+            "datum": "2020-08-15",
+            "autor": "Renewable Energy Experts",
+            "slug": "renewable-energy-innovations"
+        },
+        {
+            "id": 11,
+            "naslov": "Tips for Effective Time Management",
+            "sadrzaj": "Practical tips and techniques to improve time management skills for increased productivity.",
+            "datum": "2020-09-05",
+            "autor": "Productivity Coaches",
+            "slug": "time-management-tips"
+        },
+        {
+            "id": 12,
+            "naslov": "Artificial Intelligence in Healthcare",
+            "sadrzaj": "How AI is transforming healthcare with advanced diagnostics and personalized treatment.",
+            "datum": "2020-10-10",
+            "autor": "Healthcare AI Specialists",
+            "slug": "ai-in-healthcare"
+        },
+        {
+            "id": 13,
+            "naslov": "E-commerce Trends in 2020",
+            "sadrzaj": "Current trends and innovations shaping the e-commerce industry in 2020.",
+            "datum": "2020-11-01",
+            "autor": "E-commerce Analysts",
+            "slug": "ecommerce-trends-2020"
+        },
+        {
+            "id": 14,
+            "naslov": "Tips for Starting a Small Business",
+            "sadrzaj": "Key tips and advice for entrepreneurs looking to start and grow a successful small business.",
+            "datum": "2020-12-05",
+            "autor": "Small Business Advisors",
+            "slug": "starting-a-small-business-tips"
+        },
+        {
+            "id": 15,
+            "naslov": "Data Privacy Regulations: A Guide",
+            "sadrzaj": "Understanding global data privacy regulations and their implications for businesses.",
+            "datum": "2021-01-15",
+            "autor": "Privacy Compliance Experts",
+            "slug": "data-privacy-regulations"
+        },
+        {
+            "id": 16,
+            "naslov": "The Rise of Virtual Reality",
+            "sadrzaj": "Exploring the growth and applications of virtual reality technology in various industries.",
+            "datum": "2021-02-20",
+            "autor": "Virtual Reality Enthusiasts",
+            "slug": "rise-of-virtual-reality"
+        },
+        {
+            "id": 17,
+            "naslov": "Introduction to Deep Learning",
+            "sadrzaj": "Understanding deep learning algorithms and their applications in artificial intelligence.",
+            "datum": "2021-03-10",
+            "autor": "Deep Learning Experts",
+            "slug": "intro-to-deep-learning"
+        },
+        {
+            "id": 18,
+            "naslov": "Effective Communication Skills in the Workplace",
+            "sadrzaj": "Key communication skills and strategies for fostering a productive work environment.",
+            "datum": "2021-04-05",
+            "autor": "Communication Specialists",
+            "slug": "communication-skills-in-workplace"
+        },
+        {
+            "id": 19,
+            "naslov": "Cloud Computing Trends",
+            "sadrzaj": "Current trends and innovations in cloud computing technology and services.",
+            "datum": "2021-05-15",
+            "autor": "Cloud Computing Analysts",
+            "slug": "cloud-computing-trends"
+        },
+        {
+            "id": 20,
+            "naslov": "UX Design Principles",
+            "sadrzaj": "Fundamental principles of user experience (UX) design for creating intuitive and engaging interfaces.",
+            "datum": "2021-06-10",
+            "autor": "UX Design Experts",
+            "slug": "ux-design-principles"
+        },
+        {
+            "id": 21,
+            "naslov": "Mobile App Development Best Practices",
+            "sadrzaj": "Best practices and strategies for developing successful mobile applications.",
+            "datum": "2021-07-01",
+            "autor": "Mobile App Developers",
+            "slug": "mobile-app-development-best-practices"
+        },
+        {
+            "id": 22,
+            "naslov": "Social Media Marketing Strategies",
+            "sadrzaj": "Effective strategies for leveraging social media platforms to promote products and engage audiences.",
+            "datum": "2021-08-15",
+            "autor": "Social Media Marketers",
+            "slug": "social-media-marketing-strategies"
+        },
+        {
+            "id": 23,
+            "naslov": "IoT (Internet of Things) Applications",
+            "sadrzaj": "Applications and benefits of IoT technology across various industries.",
+            "datum": "2021-09-05",
+            "autor": "IoT Experts",
+            "slug": "iot-applications"
+        },
+        {
+            "id": 24,
+            "naslov": "Artificial Intelligence Ethics",
+            "sadrzaj": "Ethical considerations and challenges associated with AI technologies.",
+            "datum": "2021-10-10",
+            "autor": "AI Ethics Specialists",
+            "slug": "ai-ethics"
+        },
+        {
+            "id": 25,
+            "naslov": "Remote Work Tools",
+            "sadrzaj": "Essential tools and software for remote teams to collaborate effectively.",
+            "datum": "2021-11-01",
+            "autor": "Remote Work Tool Experts",
+            "slug": "remote-work-tools"
+        },
+        {
+            "id": 26,
+            "naslov": "Startup Funding Options",
+            "sadrzaj": "Overview of different funding options available for startups and small businesses.",
+            "datum": "2021-12-05",
+            "autor": "Startup Advisors",
+            "slug": "startup-funding-options"
+        },
+        {
+            "id": 27,
+            "naslov": "Introduction to Quantum Computing",
+            "sadrzaj": "Basic concepts and potential applications of quantum computing technology.",
+            "datum": "2022-01-15",
+            "autor": "Quantum Computing Experts",
+            "slug": "intro-to-quantum-computing"
+        },
+        {
+            "id": 28,
+            "naslov": "Machine Learning in Finance",
+            "sadrzaj": "Applications of machine learning algorithms in financial analysis and decision-making.",
+            "datum": "2022-02-20",
+            "autor": "Finance AI Specialists",
+            "slug": "ml-in-finance"
+        },
+        {
+            "id": 29,
+            "naslov": "Cybersecurity Threats in 2022",
+            "sadrzaj": "Emerging cybersecurity threats and how to protect against them in 2022.",
+            "datum": "2022-03-10",
+            "autor": "Cybersecurity Analysts",
+            "slug": "cybersecurity-threats-2022"
+        },
+        {
+            "id": 30,
+            "naslov": "Big Data Analytics Tools",
+            "sadrzaj": "Popular tools and platforms for performing big data analytics and gaining actionable insights.",
+            "datum": "2022-04-05",
+            "autor": "Big Data Experts",
+            "slug": "big-data-analytics-tools"
+        },
+        {
+            "id": 31,
+            "naslov": "User Interface Design Trends",
+            "sadrzaj": "Current trends and innovations in user interface (UI) design for web and mobile applications.",
+            "datum": "2022-05-15",
+            "autor": "UI Designers",
+            "slug": "ui-design-trends"
+        },
+        {
+            "id": 32,
+            "naslov": "Content Marketing Strategies",
+            "sadrzaj": "Strategies for creating and distributing valuable content to attract and retain customers.",
+            "datum": "2022-06-10",
+            "autor": "Content Marketing Experts",
+            "slug": "content-marketing-strategies"
+        },
+        {
+            "id": 33,
+            "naslov": "Augmented Reality Applications",
+            "sadrzaj": "Applications and uses of augmented reality technology in gaming, education, and business.",
+            "datum": "2022-07-01",
+            "autor": "AR Specialists",
+            "slug": "augmented-reality-applications"
+        },
+        {
+            "id": 34,
+            "naslov": "SEO (Search Engine Optimization) Techniques",
+            "sadrzaj": "Effective techniques for optimizing websites to improve search engine rankings and visibility.",
+            "datum": "2022-08-15",
+            "autor": "SEO Experts",
+            "slug": "seo-techniques"
+        },
+        {
+            "id": 35,
+            "naslov": "Startup Growth Strategies",
+            "sadrzaj": "Strategies and tactics for achieving rapid growth and scalability for startups.",
+            "datum": "2022-09-05",
+            "autor": "Startup Growth Advisors",
+            "slug": "startup-growth-strategies"
+        },
+        {
+            "id": 36,
+            "naslov": "Ethical Hacking Techniques",
+            "sadrzaj": "Methods and tools used by ethical hackers to identify and fix security vulnerabilities.",
+            "datum": "2022-10-10",
+            "autor": "Ethical Hackers",
+            "slug": "ethical-hacking-techniques"
+        },
+        {
+            "id": 37,
+            "naslov": "Green Technologies in Construction",
+            "sadrzaj": "Innovative green building technologies and practices to promote sustainability in construction.",
+            "datum": "2022-11-01",
+            "autor": "Green Construction Experts",
+            "slug": "green-technologies-construction"
+        },
+        {
+            "id": 38,
+            "naslov": "Business Intelligence Tools",
+            "sadrzaj": "Tools and platforms for collecting, analyzing, and visualizing business data to drive informed decisions.",
+            "datum": "2022-12-05",
+            "autor": "Business Intelligence Analysts",
+            "slug": "business-intelligence-tools"
+        },
+        {
+            "id": 39,
+            "naslov": "IoT Security Best Practices",
+            "sadrzaj": "Best practices for securing IoT devices and networks against cyber threats.",
+            "datum": "2023-01-15",
+            "autor": "IoT Security Experts",
+            "slug": "iot-security-best-practices"
+        },
+        {
+            "id": 40,
+            "naslov": "Remote Work Productivity Tips",
+            "sadrzaj": "Tips and strategies for staying productive while working remotely.",
+            "datum": "2023-02-20",
+            "autor": "Remote Work Productivity Coaches",
+            "slug": "remote-work-productivity-tips"
+        },
+        {
+            "id": 41,
+            "naslov": "Digital Transformation Trends",
+            "sadrzaj": "Key trends and technologies driving digital transformation across industries.",
+            "datum": "2023-03-10",
+            "autor": "Digital Transformation Experts",
+            "slug": "digital-transformation-trends"
+        },
+        {
+            "id": 42,
+            "naslov": "Data Science Applications in Healthcare",
+            "sadrzaj": "Applications of data science and analytics in improving healthcare outcomes and operations.",
+            "datum": "2023-04-05",
+            "autor": "Healthcare Data Scientists",
+            "slug": "data-science-healthcare"
+        },
+        {
+            "id": 43,
+            "naslov": "Social Media Analytics Tools",
+            "sadrzaj": "Tools and platforms for analyzing social media data to optimize marketing strategies.",
+            "datum": "2023-05-15",
+            "autor": "Social Media Analysts",
+            "slug": "social-media-analytics-tools"
+        },
+        {
+            "id": 44,
+            "naslov": "Agile Project Management Practices",
+            "sadrzaj": "Agile methodologies and practices for managing projects and teams in dynamic environments.",
+            "datum": "2023-06-10",
+            "autor": "Agile Project Managers",
+            "slug": "agile-project-management-practices"
+        },
+        {
+            "id": 45,
+            "naslov": "Cloud Security Best Practices",
+            "sadrzaj": "Best practices for securing cloud environments and data against cyber threats.",
+            "datum": "2023-07-01",
+            "autor": "Cloud Security Experts",
+            "slug": "cloud-security-best-practices"
+        },
+        {
+            "id": 46,
+            "naslov": "Customer Experience Strategies",
+            "sadrzaj": "Strategies and techniques for delivering exceptional customer experiences and building brand loyalty.",
+            "datum": "2023-08-15",
+            "autor": "Customer Experience Specialists",
+            "slug": "customer-experience-strategies"
+        },
+        {
+            "id": 47,
+            "naslov": "Robotic Process Automation (RPA)",
+            "sadrzaj": "Applications and benefits of robotic process automation in streamlining business processes.",
+            "datum": "2023-09-05",
+            "autor": "RPA Specialists",
+            "slug": "robotic-process-automation"
+        },
+        {
+            "id": 48,
+            "naslov": "Sustainable Business Practices",
+            "sadrzaj": "Implementing sustainable practices to reduce environmental impact and promote corporate social responsibility.",
+            "datum": "2023-10-10",
+            "autor": "Sustainability Experts",
+            "slug": "sustainable-business-practices"
+        },
+        {
+            "id": 49,
+            "naslov": "Data Visualization Tools",
+            "sadrzaj": "Tools and techniques for creating visual representations of data to facilitate analysis and decision-making.",
+            "datum": "2023-11-01",
+            "autor": "Data Visualization Experts",
+            "slug": "data-visualization-tools"
+        },
+        {
+            "id": 50,
+            "naslov": "Artificial Intelligence in Retail",
+            "sadrzaj": "Applications of AI technologies in retail for personalized shopping experiences and operational efficiency.",
+            "datum": "2023-12-05",
+            "autor": "Retail AI Specialists",
+            "slug": "ai-in-retail"
+        },
+        {
+            "id": 51,
+            "naslov": "The Impact of 5G on IoT",
+            "sadrzaj": "Explore how the rollout of 5G networks is transforming the landscape of IoT applications and connectivity.",
+            "datum": "2024-01-20",
+            "autor": "5G and IoT Experts",
+            "slug": "impact-of-5g-on-iot"
+        }
+    ]
+}
